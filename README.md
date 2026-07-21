@@ -4,6 +4,8 @@ Northline Supply is a responsive direct-to-consumer commerce storefront built as
 
 This is not a real client project or active retailer. Product names, prices, specifications, ratings, review counts, promotions, inventory states, order references, and brand claims are fictional demo content. Checkout does not process payment, contact and newsletter forms do not transmit data, and no real orders are created.
 
+[Live demo](https://northline-storefront.vercel.app) · [GitHub repository](https://github.com/lizhangfei843-svg/northline-storefront)
+
 ## Highlights
 
 - Next.js 16 App Router with React 19 and strict TypeScript
@@ -19,7 +21,7 @@ This is not a real client project or active retailer. Product names, prices, spe
 - Global metadata, Open Graph image, robots.txt, sitemap.xml, custom 404, loading states, and error state
 - Keyboard navigation, visible focus styles, semantic landmarks, labels, alt text, and reduced-motion support
 - Vitest unit coverage and Playwright user-flow plus visual checks
-- Vercel-ready configuration and GitHub Actions CI
+- Production deployment on Vercel and GitHub Actions CI
 
 ## Tech stack
 
@@ -82,7 +84,7 @@ Latest local verification on 2026-07-21:
 - ESLint: passed
 - TypeScript strict check: passed
 - Vitest: 5 tests passed
-- Playwright: 12 tests passed (critical flows, overflow checks, and responsive visual checks)
+- Playwright: 13 tests passed (critical flows, product interactions, overflow checks, and responsive visual checks)
 - Next.js production build: passed; 24 static/SSG routes generated
 
 ## Architecture notes
@@ -131,14 +133,17 @@ Catalog and editorial photography is loaded from [Unsplash](https://unsplash.com
 
 ## Deploy to Vercel
 
-No deployment or remote repository has been created from this workspace.
+Production deployment: [northline-storefront.vercel.app](https://northline-storefront.vercel.app)
 
-1. Push this folder to a GitHub repository after reviewing the commit.
-2. In Vercel, choose **Add New → Project** and import the repository.
-3. If this folder lives inside a larger repository, set **Root Directory** to `northline-storefront`.
-4. Keep **Framework Preset** as Next.js and use the default build command `npm run build`.
-5. Add `NEXT_PUBLIC_SITE_URL` with the final HTTPS origin, for example `https://northline-storefront.vercel.app`.
-6. Deploy, then verify `/`, `/shop`, a product page, `/robots.txt`, and `/sitemap.xml`.
+Source repository: [github.com/lizhangfei843-svg/northline-storefront](https://github.com/lizhangfei843-svg/northline-storefront)
+
+The production project is currently deployed from the Vercel CLI. To enable automatic deployments for future GitHub pushes, add the GitHub account under **Vercel Account Settings → Authentication** and connect this repository from the project settings.
+
+1. Clone the repository and run the local verification commands above.
+2. In Vercel, choose **Add New → Project** and import the repository, or run `vercel --prod` from the project directory.
+3. Keep **Framework Preset** as Next.js and use the default build command `npm run build`.
+4. Set `NEXT_PUBLIC_SITE_URL` to the final HTTPS origin, such as `https://northline-storefront.vercel.app`.
+5. Deploy, then verify `/`, `/shop`, a product page, `/robots.txt`, and `/sitemap.xml`.
 
 No database, payment, authentication, or private environment variables are required.
 
@@ -146,11 +151,11 @@ No database, payment, authentication, or private environment variables are requi
 
 **Portfolio description**
 
-Built a responsive Next.js commerce storefront with strict TypeScript and Tailwind CSS, featuring URL-backed product search, category and price filtering, dynamic product pages, variant selection, persistent Zustand cart state, mock checkout validation, accessible responsive layouts, SEO metadata, automated Vitest/Playwright coverage, and Vercel-ready deployment.
+Built and deployed a responsive Next.js commerce storefront with strict TypeScript and Tailwind CSS, featuring URL-backed product search, category and price filtering, dynamic product pages, variant selection, persistent Zustand cart state, mock checkout validation, accessible responsive layouts, SEO metadata, automated Vitest/Playwright coverage, and Vercel production deployment.
 
 **Freelancer proposal option 1**
 
-I recently built Northline Supply, a polished Next.js commerce demo with responsive product discovery, URL-persistent filters, dynamic product pages, variant selection, a localStorage cart, and a fully validated mock checkout—showing I can take a storefront from typed data architecture through browser testing and deployment preparation.
+I recently built and deployed Northline Supply, a polished Next.js commerce demo with responsive product discovery, URL-persistent filters, dynamic product pages, variant selection, a localStorage cart, and a fully validated mock checkout—showing I can take a storefront from typed data architecture through browser testing and production delivery.
 
 **Freelancer proposal option 2**
 
@@ -158,11 +163,11 @@ My commerce portfolio includes a production-built Next.js and TypeScript storefr
 
 **English résumé bullet**
 
-- Built and tested a responsive Next.js 16 commerce storefront with TypeScript, Tailwind CSS, URL-backed catalog filters, static product routes, Zustand localStorage cart persistence, mock checkout validation, SEO metadata, and Vercel-ready CI.
+- Built, tested, and deployed a responsive Next.js 16 commerce storefront with TypeScript, Tailwind CSS, URL-backed catalog filters, static product routes, Zustand localStorage cart persistence, mock checkout validation, SEO metadata, and Vercel production delivery.
 
 **中文简历 bullet**
 
-- 使用 Next.js 16、TypeScript 与 Tailwind CSS 完成响应式电商前端，涵盖 URL 商品筛选、静态商品详情、Zustand 购物车持久化、模拟结账校验、SEO 元数据、Playwright 自动化测试及 Vercel 部署准备。
+- 使用 Next.js 16、TypeScript 与 Tailwind CSS 构建、测试并部署响应式电商前端，涵盖 URL 商品筛选、静态商品详情、Zustand 购物车持久化、模拟结账校验、SEO 元数据、Playwright 自动化测试及 Vercel 生产部署。
 
 **Suggested GitHub description**
 
