@@ -1,0 +1,296 @@
+import type { Product } from "@/types/product";
+
+const image = (id: string, alt: string) => ({
+  src: `https://images.unsplash.com/${id}?auto=format&fit=crop&w=1400&q=85`,
+  alt,
+});
+
+export const products: Product[] = [
+  {
+    id: "NL-101",
+    slug: "axis-desk-mat",
+    name: "Axis Wool-Felt Desk Mat",
+    shortDescription: "A soft, structured landing zone for the tools you reach for most.",
+    fullDescription: "The Axis mat brings visual calm to a busy desk while protecting the surface beneath. Dense recycled wool felt keeps a keyboard steady, softens sound, and develops a subtle patina through everyday use.",
+    price: 68,
+    category: "Desk Essentials",
+    images: [
+      image("photo-1494438639946-1ebd1d20bf85", "A tidy modern desk with keyboard and accessories"),
+      image("photo-1497366811353-6870744d04b2", "A bright contemporary workspace"),
+    ],
+    variants: [
+      { name: "Charcoal", hex: "#343938" },
+      { name: "Moss", hex: "#566455" },
+      { name: "Stone", hex: "#b3b0a8" },
+    ],
+    rating: 4.8,
+    reviewCount: 42,
+    inventoryStatus: "In stock",
+    featured: true,
+    specifications: { Material: "Recycled wool felt", Size: "31.5 × 15.7 in", Thickness: "4 mm", Care: "Spot clean" },
+  },
+  {
+    id: "NL-102",
+    slug: "arc-aluminum-laptop-stand",
+    name: "Arc Aluminum Laptop Stand",
+    shortDescription: "A stable, elevated platform that brings your screen to a better height.",
+    fullDescription: "A single piece of bead-blasted aluminum lifts laptops for a more comfortable view. Silicone contact pads protect your device and a ventilated back keeps air moving during focused work sessions.",
+    price: 92,
+    compareAtPrice: 110,
+    category: "Desk Essentials",
+    images: [
+      image("photo-1527443224154-c4a3942d3acf", "Laptop raised on a clean modern desk"),
+      image("photo-1524758631624-e2822e304c36", "Contemporary workspace with computers"),
+    ],
+    variants: [
+      { name: "Natural aluminum", hex: "#c7c8c5" },
+      { name: "Graphite", hex: "#4c5051" },
+    ],
+    rating: 4.7,
+    reviewCount: 36,
+    inventoryStatus: "In stock",
+    featured: true,
+    specifications: { Material: "Anodized aluminum", Compatibility: "Laptops up to 16 in", Weight: "2.1 lb", Warranty: "2 years" },
+  },
+  {
+    id: "NL-103",
+    slug: "field-mechanical-keyboard",
+    name: "Field Low-Profile Mechanical Keyboard",
+    shortDescription: "Tactile, quiet typing in a compact wireless layout.",
+    fullDescription: "Field pairs low-profile tactile switches with a restrained 75% layout. Connect up to three devices, move between them quickly, and keep a full function row without giving away unnecessary desk space.",
+    price: 149,
+    category: "Desk Essentials",
+    images: [
+      image("photo-1587829741301-dc798b83add3", "Compact mechanical keyboard on a desk"),
+      image("photo-1595225476474-87563907a212", "Close view of mechanical keyboard keys"),
+    ],
+    variants: [
+      { name: "Ink", hex: "#252827" },
+      { name: "Fog", hex: "#d7d8d3" },
+    ],
+    rating: 4.9,
+    reviewCount: 58,
+    inventoryStatus: "Low stock",
+    featured: true,
+    specifications: { Layout: "75% / 84 keys", Connection: "Bluetooth + USB-C", Battery: "Up to 120 hours", Switch: "Low-profile tactile" },
+  },
+  {
+    id: "NL-201",
+    slug: "beam-task-lamp",
+    name: "Beam Adjustable Task Lamp",
+    shortDescription: "Focused, glare-controlled light with a balanced steel arm.",
+    fullDescription: "Beam places warm, even light exactly where the work is. Its spring-balanced arm moves smoothly, while a low-profile base leaves useful desk space open.",
+    price: 128,
+    compareAtPrice: 148,
+    category: "Lighting",
+    images: [
+      image("photo-1507473885765-e6ed057f782c", "Black adjustable task lamp on a desk"),
+      image("photo-1513506003901-1e6a229e2d15", "Modern desk lamp illuminating a workspace"),
+    ],
+    variants: [
+      { name: "Forest", hex: "#244b3a" },
+      { name: "Matte black", hex: "#222524" },
+      { name: "Chalk", hex: "#e7e5df" },
+    ],
+    rating: 4.8,
+    reviewCount: 31,
+    inventoryStatus: "In stock",
+    featured: true,
+    specifications: { Light: "800 lumens", Temperature: "2700–4000K", Controls: "Touch dimmer", Cable: "6 ft woven" },
+  },
+  {
+    id: "NL-202",
+    slug: "halo-ambient-table-light",
+    name: "Halo Ambient Table Light",
+    shortDescription: "Soft diffused light for the edges of your workday.",
+    fullDescription: "Halo gives shelves and side tables an understated pool of light. A frosted glass shade diffuses the integrated LED while a weighted base makes one-handed dimming feel natural.",
+    price: 115,
+    category: "Lighting",
+    images: [
+      image("photo-1517991104123-1d56a6e81ed9", "Warm table lamp in a modern interior"),
+      image("photo-1543198126-a8ad8e47fb22", "Minimal lamp casting warm light"),
+    ],
+    variants: [
+      { name: "Forest", hex: "#244b3a" },
+      { name: "Burnished steel", hex: "#777a76" },
+    ],
+    rating: 4.6,
+    reviewCount: 24,
+    inventoryStatus: "In stock",
+    featured: false,
+    specifications: { Light: "420 lumens", Temperature: "2700K", Shade: "Frosted glass", Dimming: "Continuous" },
+  },
+  {
+    id: "NL-301",
+    slug: "studio-monitor-headphones",
+    name: "Studio Monitor Headphones",
+    shortDescription: "Detailed, balanced listening built for long sessions.",
+    fullDescription: "These closed-back headphones keep outside noise down without exaggerating the music. Deep cushions, replaceable cables, and a balanced driver make them an easy all-day choice for editing or listening.",
+    price: 189,
+    compareAtPrice: 219,
+    category: "Audio",
+    images: [
+      image("photo-1505740420928-5e560c06d30e", "Over-ear headphones against a clean background"),
+      image("photo-1484704849700-f032a568e944", "Black over-ear headphones on a table"),
+    ],
+    variants: [
+      { name: "Black", hex: "#1f2221" },
+      { name: "Silver", hex: "#b9bab7" },
+    ],
+    rating: 4.9,
+    reviewCount: 73,
+    inventoryStatus: "In stock",
+    featured: true,
+    specifications: { Driver: "45 mm dynamic", Impedance: "38 ohms", Cable: "1.8 m detachable", Weight: "286 g" },
+  },
+  {
+    id: "NL-302",
+    slug: "nearfield-desktop-speakers",
+    name: "Nearfield Desktop Speakers",
+    shortDescription: "Compact powered speakers with honest, room-filling sound.",
+    fullDescription: "Nearfield speakers are tuned for a clear image at desk distance, with enough low-end authority for casual listening. Analog and USB-C inputs keep setup simple, and front controls stay within reach.",
+    price: 248,
+    category: "Audio",
+    images: [
+      image("photo-1545454675-3531b543be5d", "Compact speakers in a listening room"),
+      image("photo-1558537348-c0f8e733989d", "Minimal home audio speaker setup"),
+    ],
+    variants: [
+      { name: "Black ash", hex: "#2c2d2a" },
+      { name: "Natural oak", hex: "#a9825d" },
+    ],
+    rating: 4.7,
+    reviewCount: 29,
+    inventoryStatus: "Pre-order",
+    featured: false,
+    specifications: { Power: "60 W total", Inputs: "USB-C, 3.5 mm, RCA", Woofer: "4 in", Pair: "Left + right" },
+  },
+  {
+    id: "NL-303",
+    slug: "signal-usb-microphone",
+    name: "Signal USB Condenser Microphone",
+    shortDescription: "Clear voice capture for calls, podcasts, and streaming.",
+    fullDescription: "Signal brings a broadcast-ready condenser capsule to a straightforward USB-C setup. A front gain dial, tap-to-mute control, and low desk stand keep calls clear without crowding the frame.",
+    price: 139,
+    category: "Audio",
+    images: [
+      image("photo-1590602847861-f357a9332bbc", "Studio microphone on a dark stand"),
+      image("photo-1589903308904-1010c2294adc", "Podcast microphone ready for recording"),
+    ],
+    variants: [
+      { name: "Graphite", hex: "#434744" },
+      { name: "Soft white", hex: "#e8e8e4" },
+    ],
+    rating: 4.6,
+    reviewCount: 19,
+    inventoryStatus: "In stock",
+    featured: false,
+    specifications: { Pattern: "Cardioid", Connection: "USB-C", "Sample rate": "24-bit / 96 kHz", Monitoring: "3.5 mm zero-latency" },
+  },
+  {
+    id: "NL-401",
+    slug: "form-ergonomic-work-chair",
+    name: "Form Ergonomic Work Chair",
+    shortDescription: "Responsive support with the controls you actually use.",
+    fullDescription: "Form combines a breathable back with a supportive molded seat. Adjust the height, tilt tension, lumbar position, and arms without a manual full of hidden levers.",
+    price: 598,
+    compareAtPrice: 649,
+    category: "Seating",
+    images: [
+      image("photo-1580480055273-228ff5388ef8", "Black ergonomic office chair"),
+      image("photo-1503602642458-232111445657", "Modern task chair in a bright interior"),
+    ],
+    variants: [
+      { name: "Charcoal", hex: "#333735" },
+      { name: "Graphite / Forest", hex: "#365344" },
+    ],
+    rating: 4.8,
+    reviewCount: 47,
+    inventoryStatus: "In stock",
+    featured: true,
+    specifications: { Height: "38–42 in", Capacity: "300 lb", Arms: "3-way adjustable", Warranty: "5 years" },
+  },
+  {
+    id: "NL-402",
+    slug: "perch-active-stool",
+    name: "Perch Active Work Stool",
+    shortDescription: "A compact seat that keeps posture moving through shorter tasks.",
+    fullDescription: "Perch is designed for work that changes pace. Its rounded base allows small, controlled movements while the grippy foot ring and cushioned seat keep the experience grounded.",
+    price: 219,
+    category: "Seating",
+    images: [
+      image("photo-1530018607912-eff2daa1bac4", "Minimal stool beside a modern desk"),
+      image("photo-1532372320572-cda25653a26d", "Simple modern stool in an interior"),
+    ],
+    variants: [
+      { name: "Graphite", hex: "#454947" },
+      { name: "Moss", hex: "#60705f" },
+    ],
+    rating: 4.5,
+    reviewCount: 16,
+    inventoryStatus: "Low stock",
+    featured: false,
+    specifications: { Height: "23–31 in", Base: "Non-slip weighted", Seat: "Molded foam", Capacity: "250 lb" },
+  },
+  {
+    id: "NL-501",
+    slug: "rail-desk-organizer",
+    name: "Rail Modular Desk Organizer",
+    shortDescription: "A configurable home for notes, tools, and daily carry.",
+    fullDescription: "Rail uses a slim anodized base and movable trays to keep small items visible without spreading. Rear cable slots create a clean path for chargers and wired accessories.",
+    price: 84,
+    category: "Organization",
+    images: [
+      image("photo-1497215842964-222b430dc094", "Organized modern desk with storage accessories"),
+      image("photo-1524863479829-916d8e77f114", "Neatly arranged desktop stationery"),
+    ],
+    variants: [
+      { name: "Forest", hex: "#244b3a" },
+      { name: "Black", hex: "#292c2b" },
+    ],
+    rating: 4.7,
+    reviewCount: 28,
+    inventoryStatus: "In stock",
+    featured: true,
+    specifications: { Material: "Aluminum + recycled ABS", Width: "18 in", Modules: "3 included", Assembly: "None" },
+  },
+  {
+    id: "NL-502",
+    slug: "line-cable-management-kit",
+    name: "Line Cable Management Kit",
+    shortDescription: "A complete, tool-light route from outlet to desktop.",
+    fullDescription: "Line gathers the small parts that make cable cleanup last: a steel under-desk tray, reusable ties, magnetic anchors, and an adhesive power-strip mount. The result stays accessible when hardware changes.",
+    price: 56,
+    category: "Organization",
+    images: [
+      image("photo-1517336714731-489689fd1ca8", "Clean desk setup with managed computer cables"),
+      image("photo-1484480974693-6ca0a78fb36b", "Organized desk with laptop and accessories"),
+    ],
+    variants: [
+      { name: "Graphite", hex: "#444846" },
+      { name: "White", hex: "#ededeb" },
+    ],
+    rating: 4.6,
+    reviewCount: 34,
+    inventoryStatus: "In stock",
+    featured: false,
+    specifications: { Tray: "16 × 4.5 in", Included: "Tray, 8 ties, 6 anchors", Mount: "Clamp + adhesive", Capacity: "11 lb" },
+  },
+];
+
+export const featuredProducts = products.filter((product) => product.featured).slice(0, 4);
+export const bestSellers = [...products].sort((a, b) => b.reviewCount - a.reviewCount).slice(0, 4);
+
+export function getProductBySlug(slug: string) {
+  return products.find((product) => product.slug === slug);
+}
+
+export function getRelatedProducts(product: Product) {
+  const sameCategory = products.filter(
+    (candidate) => candidate.category === product.category && candidate.id !== product.id,
+  );
+  const others = products.filter(
+    (candidate) => candidate.category !== product.category && candidate.id !== product.id,
+  );
+  return [...sameCategory, ...others].slice(0, 4);
+}
